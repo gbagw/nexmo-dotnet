@@ -83,7 +83,7 @@ namespace Nexmo.Api
             public Webhook AnswerUrl { get; set; }
             [JsonProperty("event_url")]
             public Webhook EventUrl { get; set; }
-            [JsonProperty("fallback_answer_url")]
+            [JsonProperty("fallback_answer_url", DefaultValueHandling = DefaultValueHandling.Ignore)]
             public Webhook FallbackAnswerUrl { get; set; }
         }
     }
